@@ -1,11 +1,11 @@
 .home-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
     .text-zone {
-        position: absolute;
-        left: 10%;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40%;
-        max-height: 90%;
+        max-width: max-content;
+        margin: auto;
+        padding: 0 24px;
     }
 
     h1 {
@@ -49,5 +49,11 @@
             background: #ffd700;
             color: #333;
         }
+    }
+}
+
+@media (max-width: 1260px) {
+    .home-page {
+        grid-template-columns: unset;
     }
 }
