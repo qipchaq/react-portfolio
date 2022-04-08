@@ -72,17 +72,18 @@
 .info-map {
     position: absolute;
     background: #000;
-    top: 50px;
-    right: 30%;
+    top: 1%;
+    right: 3.5%;
     z-index: 999999;
-    width: 267px;
+    width: fit-content;
     padding: 20px;
     color: #fff;
+    text-align: right;
     font-family: 'Helvetica';
     font-size: 17px;
     font-weight: 300;
     opacity: 0;
-    animation: fadeIn 1s 1.5s;
+    animation: fadeIn 1.5s 2.5s;
     animation-fill-mode: forwards;
 
     span {
@@ -92,11 +93,10 @@
 }
 
 .map-wrap {
-    background: rgba(8, 253, 216, 0.1);
-    float: right;
-    width: 53%;
-    height: 115%;
-    margin-top: -3%;
+    width: 50%;
+    height: 98%;
+    padding-right: 1%;
+    position: relative;
 }
 
 .leaflet-container {

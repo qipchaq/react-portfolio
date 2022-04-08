@@ -1,17 +1,17 @@
+.app {
+    display: flex;
+}
+
 .page {
     width: 100%;
-    height: 100%;
-    position: absolute;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .container {
     width: 100%;
-    will-change: contents;
-    height: 90%;
-    min-height: 566px;
-    position: absolute;
     opacity: 0;
-    top: 5%;
     margin: 0 auto;
     z-index: 1;
     transform-style: preserve-3d;
@@ -21,15 +21,11 @@
 
 .container.contact-page,
 .container.about-page {
+    width: 50%;
+
     .text-zone {
-        position: absolute;
-        left: 10%;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 35%;
-        vertical-align: middle;
-        display: table-cell;
-        max-height: 90%;
+        max-width: 400px;
+        margin: 0 auto;
 
         h1 {
             font-size: 53px;
@@ -67,5 +63,15 @@
         &:hover {
             color: #fff;
         }
+    }
+}
+
+.container.about-page {
+    width: 100%;
+    display: flex;
+
+    .text-zone,
+    .stage-cube-cont {
+        width: 50%;
     }
 }

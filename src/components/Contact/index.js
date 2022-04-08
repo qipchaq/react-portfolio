@@ -88,15 +88,6 @@ const Contact = () => {
                         </form>
                     </div>
                 </div>
-                <div className='info-map'>
-                    {/* Adil Nurkali */}
-                    <br />
-                    Czech Republic
-                    <br />
-                    Prague
-                    <br />
-                    <span>nurkali.adil@gmail.com</span>
-                </div>
             </div>
             <div className='map-wrap'>
                 <MapContainer center={[50.0754, 14.4142]} zoom={13}>
@@ -105,6 +96,16 @@ const Contact = () => {
                         <Popup>I'm living here, come over for a cup of tea :)</Popup>
                     </Marker>
                 </MapContainer>
+
+                <div className='info-map'>
+                    Adil Nurkali
+                    <br />
+                    Czech Republic
+                    <br />
+                    Prague
+                    <br />
+                    <span>nurkali.adil@gmail.com</span>
+                </div>
             </div>
             <Loader type='pacman' />
         </>
