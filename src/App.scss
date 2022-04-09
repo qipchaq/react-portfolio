@@ -36,3 +36,140 @@ textarea {
     animation: fadeOut 1s 0.5s;
     animation-fill-mode: forwards;
 }
+
+
+
+@media (max-width: 1260px) {
+    .container {
+        grid-template-columns: unset !important;
+        grid-template-rows: 1fr 1fr;
+
+        .text-zone {
+            align-self: end !important;
+            justify-self: center !important;
+        }
+
+        .photo {
+            align-self: start !important;
+            justify-self: center !important;
+        }
+
+        .map-wrap {
+            padding: 0;
+            margin-bottom: 36px;
+        }
+
+        &.contact-page {
+            .text-zone {
+                padding: 0 !important;
+            }
+        }
+
+    }
+
+    h1 {
+        max-width: 325px;
+    }
+}
+
+@media (max-width: 768px) {
+    .app {
+        flex-direction: column;
+
+        .nav-bar {
+            width: 100vw;
+            height: 60px;
+            flex-direction: initial;
+
+            .logo {
+                margin-left: 16px;
+                display: flex;
+                align-items: center;
+
+                img {
+                    margin: 0;
+                }
+            }
+
+            nav {
+                display: flex;
+
+                a {
+                    display: flex;
+                    height: 100%;
+                    align-items: center;
+                    width: 50px;
+                    justify-content: center;
+
+                    &::after {
+                        top: 5px;
+                    }
+                }
+            }
+
+            ul {
+                width: initial;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                margin-right: 16px;
+
+                li {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .page {
+            width: calc(100% - 32px);
+            padding: 0 16px;
+
+            .home-page {
+                grid-template-columns: unset;
+                grid-template-rows: 45% 55%;
+
+                .text-zone {
+                    padding: 0;
+                    margin: 0;
+                }
+
+                .photo {
+                    max-width: 400px;
+                    align-self: start;
+                    justify-self: center;
+                }
+            }
+
+            .about-page {
+                flex-direction: column;
+                height: 100%;
+            }
+
+            .container.home-page .text-zone,
+            .container.about-page .text-zone,
+            .container.contact-page .text-zone {
+                h1 {
+                    margin: 24px 0 0;
+                }
+            }
+
+            .map-wrap {
+                margin-bottom: 76px;
+            }
+
+            .info-map {
+                padding: 10px;
+                font-size: 12px;
+
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+
+
+        .text-zone {
+            width: 100%;
+        }
+    }
+}

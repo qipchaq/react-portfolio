@@ -19,17 +19,22 @@
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
     gap: 36px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
 }
 
 .container.contact-page,
 .container.about-page {
-    width: 50%;
-    display: flex;
+    width: 100%;
 
     .text-zone {
         max-width: 400px;
         margin: 0 auto;
         padding: 0 24px;
+        align-self: center;
+        justify-self: center;
 
         h1 {
             font-size: 53px;
@@ -70,109 +75,22 @@
     }
 }
 
-.container.about-page {
-    width: 100%;
-    display: flex;
-
-    .text-zone,
-    .stage-cube-cont {
-        width: 50%;
-    }
-}
-
 @media (max-width: 1260px) {
-    .home-page {
+    .container {
         grid-template-columns: unset;
 
-        .photo-container {
+        .text-zone {
+            align-self: end;
             justify-self: center;
-            margin: 0;
+        }
+
+        .photo {
+            align-self: start;
+            justify-self: center;
         }
     }
 
     h1 {
         max-width: 325px;
-    }
-}
-
-@media (max-width: 768px) {
-    .app {
-        flex-direction: column;
-
-        .nav-bar {
-            width: 100vw;
-            height: 60px;
-            flex-direction: initial;
-
-            .logo {
-                margin-left: 16px;
-                display: flex;
-                align-items: center;
-
-                img {
-                    margin: 0;
-                }
-            }
-
-            nav {
-                display: flex;
-
-                a {
-                    display: flex;
-                    height: 100%;
-                    align-items: center;
-                    width: 50px;
-                    justify-content: center;
-
-                    &::after {
-                        top: 5px;
-                    }
-                }
-            }
-
-            ul {
-                width: initial;
-                display: flex;
-                align-items: center;
-                gap: 16px;
-                margin-right: 16px;
-
-                li {
-                    display: inline-block;
-                }
-            }
-        }
-
-        .page {
-            width: calc(100% - 32px);
-            padding: 0 16px;
-        }
-
-        .home-page {
-            grid-template-columns: unset;
-            grid-template-rows: 45% 55%;
-
-            .text-zone {
-                padding: 0;
-                align-self: end;
-                justify-self: center;
-                margin: 0;
-            }
-
-            .photo {
-                max-width: 400px;
-                align-self: start;
-                justify-self: center;
-            }
-        }
-
-        .about-page {
-            flex-direction: column;
-            height: 100%;
-        }
-
-        .text-zone {
-            width: 100%;
-        }
     }
 }

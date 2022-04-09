@@ -88,23 +88,23 @@ const Contact = () => {
                         </form>
                     </div>
                 </div>
-            </div>
-            <div className='map-wrap'>
-                <MapContainer center={[50.0754, 14.4142]} zoom={13}>
-                    <TileLayer url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png' />
-                    <Marker position={[50.0754, 14.4142]}>
-                        <Popup>I'm living here, come over for a cup of tea :)</Popup>
-                    </Marker>
-                </MapContainer>
+                <div className='map-wrap'>
+                    <MapContainer center={[50.0754, 14.4142]} zoom={13}>
+                        <TileLayer url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png' />
+                        <Marker position={[50.0754, 14.4142]}>
+                            <Popup>I'm living here, come over for a cup of tea :)</Popup>
+                        </Marker>
+                    </MapContainer>
 
-                <div className='info-map'>
-                    Adil Nurkali
-                    <br />
-                    Czech Republic
-                    <br />
-                    Prague
-                    <br />
-                    <span>nurkali.adil@gmail.com</span>
+                    <div className='info-map'>
+                        Adil Nurkali
+                        <br />
+                        Czech Republic
+                        <br />
+                        Prague
+                        <br />
+                        <span>nurkali.adil@gmail.com</span>
+                    </div>
                 </div>
             </div>
             <Loader type='pacman' />

@@ -1,12 +1,8 @@
 .home-page {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100%;
-
     .text-zone {
         max-width: max-content;
-        margin: auto;
-        padding: 0 24px;
+        align-self: center;
+        justify-self: center;
     }
 
     h1 {
@@ -50,5 +46,25 @@
             background: #ffd700;
             color: #333;
         }
+    }
+}
+
+@media (max-width: 1260px) {
+    .home-page {
+        grid-template-columns: unset;
+
+        .text-zone {
+            align-self: end;
+            justify-self: center;
+        }
+
+        .photo-container {
+            justify-self: center;
+            margin: 0;
+        }
+    }
+
+    h1 {
+        max-width: 325px;
     }
 }

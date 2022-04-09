@@ -16,6 +16,14 @@
             position: relative;
             animation: fadeInUp 2s 2s;
             animation-fill-mode: forwards;
+
+            input,
+            textarea {
+                &::placeholder {
+                    color: #C5D5E4;
+                    font-family: sans-serif;
+                }
+            }
         }
 
         li.half {
@@ -66,13 +74,19 @@
         float: right;
         text-align: center;
         margin-right: 10px;
+        cursor: pointer;
+
+        &:hover {
+            background: #ffd700;
+            color: #333;
+        }
     }
 }
 
 .info-map {
     position: absolute;
     background: #000;
-    top: 1%;
+    top: 5%;
     right: 3.5%;
     z-index: 999999;
     width: fit-content;
@@ -93,9 +107,7 @@
 }
 
 .map-wrap {
-    width: 50%;
-    height: 98%;
-    padding-right: 1%;
+    padding: 36px 0;
     position: relative;
 }
 
