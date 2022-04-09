@@ -2,8 +2,6 @@ import './index.scss'
 import picture from '../../../assets/images/my-photo.jpeg'
 
 const Photo = () => {
-    const piecePhoto = [...Array(16)].map(() => <div class='piece'></div>)
-
     return (
         <figure class="photo"><img src={picture} alt="photo" />
             <div class="border one">

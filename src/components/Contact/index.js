@@ -94,22 +94,20 @@ const Contact = () => {
                         <Marker position={[50.0754, 14.4142]}>
                             <Popup>I'm living here, come over for a cup of tea :)</Popup>
                         </Marker>
+                        <div className='info-map'>
+                            Adil Nurkali
+                            <br />
+                            Czech Republic
+                            <br />
+                            Prague
+                            <br />
+                            <span>nurkali.adil@gmail.com</span>
+                        </div>
                     </MapContainer>
-
-                    <div className='info-map'>
-                        Adil Nurkali
-                        <br />
-                        Czech Republic
-                        <br />
-                        Prague
-                        <br />
-                        <span>nurkali.adil@gmail.com</span>
-                    </div>
                 </div>
             </div>
             <Loader type='pacman' />
         </>
-
     )
 }
 

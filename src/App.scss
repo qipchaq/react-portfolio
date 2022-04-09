@@ -59,7 +59,8 @@ textarea {
             margin-bottom: 36px;
         }
 
-        &.contact-page {
+        &.contact-page,
+        &.about-page {
             .text-zone {
                 padding: 0 !important;
             }
@@ -171,5 +172,15 @@ textarea {
         .text-zone {
             width: 100%;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .container.about-page {
+        gap: 0 !important;
+    }
+
+    .stage-cube-cont {
+        margin-top: -325px !important;
     }
 }
