@@ -1,6 +1,7 @@
 .home-page {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height: 100%;
 
     .text-zone {
         max-width: max-content;
@@ -49,11 +50,5 @@
             background: #ffd700;
             color: #333;
         }
-    }
-}
-
-@media (max-width: 1260px) {
-    .home-page {
-        grid-template-columns: unset;
     }
 }

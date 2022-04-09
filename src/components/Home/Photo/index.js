@@ -1,15 +1,18 @@
 import './index.scss'
+import picture from '../../../assets/images/my-photo.jpeg'
 
 const Photo = () => {
-    const piecePhoto = [...Array(50)].map(() => <div class='piece'></div>)
+    const piecePhoto = [...Array(16)].map(() => <div class='piece'></div>)
 
     return (
-        <div className='photo-container'>
-            {piecePhoto}
-            <div class="photo-text">
-                <h2>Web Development Forever</h2>
+        <figure class="photo"><img src={picture} alt="photo" />
+            <div class="border one">
+                <div></div>
             </div>
-        </div>
+            <div class="border two">
+                <div></div>
+            </div>
+        </figure>
     )
 }
 

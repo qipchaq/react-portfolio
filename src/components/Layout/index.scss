@@ -7,6 +7,7 @@
     height: 100vh;
     display: flex;
     align-items: center;
+    padding: 0 36px;
 }
 
 .container {
@@ -41,7 +42,7 @@
         }
 
         p {
-            font-size: 13px;
+            font-size: 18px;
             color: #fff;
             font-family: sans-serif;
             font-weight: 300;
@@ -88,6 +89,10 @@
             margin: 0;
         }
     }
+
+    h1 {
+        max-width: 325px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -99,24 +104,75 @@
             height: 60px;
             flex-direction: initial;
 
+            .logo {
+                margin-left: 16px;
+                display: flex;
+                align-items: center;
+
+                img {
+                    margin: 0;
+                }
+            }
+
             nav {
                 display: flex;
-                gap: 36px;
 
                 a {
                     display: flex;
                     height: 100%;
                     align-items: center;
+                    width: 50px;
+                    justify-content: center;
+
+                    &::after {
+                        top: 5px;
+                    }
                 }
             }
 
             ul {
                 width: initial;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                margin-right: 16px;
 
                 li {
                     display: inline-block;
                 }
             }
+        }
+
+        .page {
+            width: calc(100% - 32px);
+            padding: 0 16px;
+        }
+
+        .home-page {
+            grid-template-columns: unset;
+            grid-template-rows: 45% 55%;
+
+            .text-zone {
+                padding: 0;
+                align-self: end;
+                justify-self: center;
+                margin: 0;
+            }
+
+            .photo {
+                max-width: 400px;
+                align-self: start;
+                justify-self: center;
+            }
+        }
+
+        .about-page {
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .text-zone {
+            width: 100%;
         }
     }
 }
