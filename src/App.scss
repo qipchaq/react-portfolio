@@ -83,7 +83,6 @@ textarea {
             flex-direction: initial;
 
             .logo {
-                margin-left: 16px;
                 display: flex;
                 align-items: center;
 
@@ -154,6 +153,14 @@ textarea {
                 }
             }
 
+            .container.about-page {
+                gap: 0 !important;
+            }
+
+            .stage-cube-cont {
+                margin-top: -325px !important;
+            }
+
             .map-wrap {
                 margin-bottom: 76px;
             }
@@ -168,19 +175,12 @@ textarea {
             }
         }
 
-
         .text-zone {
             width: 100%;
         }
-    }
-}
 
-@media (max-width: 768px) {
-    .container.about-page {
-        gap: 0 !important;
-    }
-
-    .stage-cube-cont {
-        margin-top: -325px !important;
+        textarea {
+            min-height: 100px !important;
+        }
     }
 }
