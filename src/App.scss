@@ -60,16 +60,16 @@ textarea {
         }
 
         &.contact-page,
-        &.about-page {
+        &.about-page,
+        &.portfolio-page {
             .text-zone {
                 padding: 0 !important;
             }
         }
-
     }
 
     h1 {
-        max-width: 325px;
+        max-width: 330px;
     }
 }
 
@@ -126,7 +126,8 @@ textarea {
 
             .home-page {
                 grid-template-columns: unset;
-                grid-template-rows: 45% 55%;
+                grid-template-rows: 50% 50%;
+                // height: 100vh;
 
                 .text-zone {
                     padding: 0;
@@ -145,11 +146,18 @@ textarea {
                 height: 100%;
             }
 
-            .container.home-page .text-zone,
-            .container.about-page .text-zone,
-            .container.contact-page .text-zone {
+            .container.home-page .text-zone {
                 h1 {
                     margin: 24px 0 0;
+                }
+            }
+
+            .container.about-page .text-zone,
+            .container.contact-page .text-zone,
+            .container.portfolio-page .text-zone {
+                h1 {
+                    margin: 24px auto 0;
+                    text-align: center;
                 }
             }
 
@@ -162,7 +170,7 @@ textarea {
             }
 
             .map-wrap {
-                margin-bottom: 76px;
+                margin-bottom: 0;
             }
 
             .info-map {
@@ -172,6 +180,10 @@ textarea {
                 span {
                     font-size: 14px;
                 }
+            }
+
+            & .contact-page {
+                height: 90vh;
             }
         }
 

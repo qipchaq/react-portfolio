@@ -4,7 +4,6 @@
 
 .page {
     width: calc(100% - 60px);
-    height: 100vh;
     display: flex;
     align-items: center;
     padding: 0 36px;
@@ -23,10 +22,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100%;
+
+    &.contact-page {
+        height: 100vh;
+    }
 }
 
 .container.contact-page,
-.container.about-page {
+.container.about-page,
+.container.portfolio-page {
     width: 100%;
 
     .text-zone {

@@ -84,6 +84,14 @@
             }
         }
 
+        a.portfolio-link {
+            &:after {
+                content: 'MY WORK';
+                line-height: 1.5;
+                top: 18px;
+            }
+        }
+
         a.active {
             svg {
                 color: #ffd700;
