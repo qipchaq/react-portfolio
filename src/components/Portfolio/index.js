@@ -53,9 +53,9 @@ const Portfolio = () => {
                         <img src={traveladviser} alt="portfolio" />
                         <figcaption>
                             <h2>App <span>Travel Adviser</span></h2>
-                            <p>To explore the World click the link below</p>
+                            <p>To explore the World of Traveling click the link below</p>
                             <div className="portfolio__link">
-                                <a href="https://react-app-cryptoverse.netlify.app/" target='_blank'>
+                                <a href="https://frolicking-kelpie-8130e2.netlify.app/" target='_blank'>
                                     <FontAwesomeIcon icon={faLink} size="lg" color='#ffd700' />
                                 </a>
                                 <a href="https://github.com/qipchaq/travel-advisor" target='_blank'>
