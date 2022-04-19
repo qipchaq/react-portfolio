@@ -3,11 +3,11 @@ import picture from '../../../assets/images/my-photo.jpeg'
 
 const Photo = () => {
     return (
-        <figure class="photo"><img src={picture} alt="photo" />
-            <div class="border one">
+        <figure className="photo"><img src={picture} alt="photo" />
+            <div className="border one">
                 <div></div>
             </div>
-            <div class="border two">
+            <div className="border two">
                 <div></div>
             </div>
         </figure>

@@ -12,17 +12,17 @@ const Sidebar = () => {
                 <img src={logo} alt='logo' />
             </Link>
             <nav>
-                <NavLink exact acctiveclassname='active' to='/'>
+                <NavLink exact activeclassname='active' to='/'>
                     <FontAwesomeIcon icon={faHome} color='#4d4d4e' />
                 </NavLink>
-                <NavLink exact acctiveclassname='active' className='about-link' to='/about'>
+                <NavLink exact activeclassname='active' className='about-link' to='/about'>
                     <FontAwesomeIcon icon={faUser} color='#4d4d4e' />
                 </NavLink>
-                <NavLink exact acctiveclassname='active' className='contact-link' to='/contact'>
-                    <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' />
-                </NavLink>
-                <NavLink exact acctiveclassname='active' className='portfolio-link' to='/portfolio'>
+                <NavLink exact activeclassname='active' className='portfolio-link' to='/portfolio'>
                     <FontAwesomeIcon icon={faBriefcase} color='#4d4d4e' />
+                </NavLink>
+                <NavLink exact activeclassname='active' className='contact-link' to='/contact'>
+                    <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' />
                 </NavLink>
             </nav>
             <ul>
