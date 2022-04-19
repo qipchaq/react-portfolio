@@ -41,10 +41,10 @@ const Portfolio = () => {
                             <p>To explore the World of Cryptocurrency click the link below</p>
                             <div className="portfolio__link">
                                 <a href="https://react-app-cryptoverse.netlify.app/" target='_blank'>
-                                    <FontAwesomeIcon icon={faLink} color='#fff' />
+                                    <FontAwesomeIcon icon={faLink} size="lg" color='#ffd700' />
                                 </a>
                                 <a href="https://github.com/qipchaq/cryptoverse" target='_blank'>
-                                    <FontAwesomeIcon icon={faGithubSquare} color='#fff' />
+                                    <FontAwesomeIcon icon={faGithubSquare} size="lg" color='#ffd700' />
                                 </a>
                             </div>
                         </figcaption>
@@ -56,10 +56,10 @@ const Portfolio = () => {
                             <p>To explore the World click the link below</p>
                             <div className="portfolio__link">
                                 <a href="https://react-app-cryptoverse.netlify.app/" target='_blank'>
-                                    <FontAwesomeIcon icon={faLink} color='#fff' />
+                                    <FontAwesomeIcon icon={faLink} size="lg" color='#ffd700' />
                                 </a>
-                                <a href="https://github.com/qipchaq/cryptoverse" target='_blank'>
-                                    <FontAwesomeIcon icon={faGithubSquare} color='#fff' />
+                                <a href="https://github.com/qipchaq/travel-advisor" target='_blank'>
+                                    <FontAwesomeIcon icon={faGithubSquare} size="lg" color='#ffd700' />
                                 </a>
                             </div>
                         </figcaption>
@@ -71,7 +71,7 @@ const Portfolio = () => {
                             <p>To explore the Wildlife click the link below</p>
                             <div className="portfolio__link">
                                 <a href="https://lifewild.netlify.app/" target='_blank'>
-                                    <FontAwesomeIcon icon={faLink} color='#fff' />
+                                    <FontAwesomeIcon icon={faLink} size="lg" color='#ffd700' />
                                 </a>
                             </div>
                         </figcaption>
@@ -83,7 +83,7 @@ const Portfolio = () => {
                             <p>To explore the Online Zoo click the link below</p>
                             <div className="portfolio__link">
                                 <a href="https://online-zoopark.netlify.app/" target='_blank'>
-                                    <FontAwesomeIcon icon={faLink} color='#fff' />
+                                    <FontAwesomeIcon icon={faLink} size="lg" color='#ffd700' />
                                 </a>
                             </div>
                         </figcaption>
@@ -95,7 +95,7 @@ const Portfolio = () => {
                             <p>To explore the Virtual Piano click the link below</p>
                             <div className="portfolio__link">
                                 <a href="https://virtual-pianino.netlify.app/" target='_blank'>
-                                    <FontAwesomeIcon icon={faLink} color='#fff' />
+                                    <FontAwesomeIcon icon={faLink} size="lg" color='#ffd700' />
                                 </a>
                             </div>
                         </figcaption>
@@ -107,7 +107,7 @@ const Portfolio = () => {
                             <p>To explore the Online Casino click the link below</p>
                             <div className="portfolio__link">
                                 <a href="https://625b17440fc57242df1a5dda--eloquent-melba-113d42.netlify.app/" target='_blank'>
-                                    <FontAwesomeIcon icon={faLink} color='#fff' />
+                                    <FontAwesomeIcon icon={faLink} size="lg" color='#ffd700' />
                                 </a>
                             </div>
                         </figcaption>
