@@ -11,6 +11,7 @@ import wildlife from '../../assets/images/wildlife.png'
 import zoo from '../../assets/images/zoo.png'
 import piano from '../../assets/images/piano.png'
 import casino from '../../assets/images/casino.png'
+import realestate from '../../assets/images/real-estate.jpg'
 
 const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -34,6 +35,21 @@ const Portfolio = () => {
                     </h1>
                 </div>
                 <div className='portfolio__container'>
+                    <figure className="portfolio__item">
+                        <img src={realestate} alt="portfolio" />
+                        <figcaption>
+                            <h2>Real Estate App <span>Realtor</span></h2>
+                            <p>To explore Real Estate click the link below</p>
+                            <div className="portfolio__link">
+                                <a href="https://real-estate-swart.vercel.app/" target='_blank'>
+                                    <FontAwesomeIcon icon={faLink} size="lg" color='#ffd700' />
+                                </a>
+                                <a href="https://github.com/qipchaq/real-estate" target='_blank'>
+                                    <FontAwesomeIcon icon={faGithubSquare} size="lg" color='#ffd700' />
+                                </a>
+                            </div>
+                        </figcaption>
+                    </figure>
                     <figure className="portfolio__item">
                         <img src={cryptoverse} alt="portfolio" />
                         <figcaption>
