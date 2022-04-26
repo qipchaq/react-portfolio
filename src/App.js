@@ -8,10 +8,11 @@ import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 
 import ReactGA from 'react-ga';
-const TRACKING_ID = "UA-227033456-1";
-ReactGA.initialize(TRACKING_ID);
 
 function App() {
+  const TRACKING_ID = "UA-227033456-1";
+  ReactGA.initialize(TRACKING_ID);
+
   return (
     <>
       <Routes>
