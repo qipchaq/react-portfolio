@@ -7,7 +7,12 @@ import About from './components/About'
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 
+import ReactGA from 'react-ga';
+
 function App() {
+  const TRACKING_ID = "UA-227033456-1";
+  ReactGA.initialize(TRACKING_ID);
+
   return (
     <>
       <Routes>

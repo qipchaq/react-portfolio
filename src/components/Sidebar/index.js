@@ -4,8 +4,11 @@ import logo from '../../assets/images/my-logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser, faBriefcase } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import useAnalyticsEventTracker from '../../useAnalyticsEventTracker';
 
 const Sidebar = () => {
+    const gaEventTracker = useAnalyticsEventTracker('Contact us');
+
     return (
         <div className='nav-bar'>
             <Link className='logo' to='/'>
@@ -18,7 +21,7 @@ const Sidebar = () => {
                 <NavLink exact activeclassname='active' className='about-link' to='/about'>
                     <FontAwesomeIcon icon={faUser} color='#4d4d4e' />
                 </NavLink>
-                <NavLink exact activeclassname='active' className='portfolio-link' to='/portfolio'>
+                <NavLink exact activeclassname='active' className='portfolio-link' to='/portfolio' onClick={()=>gaEventTracker('call')}>
                     <FontAwesomeIcon icon={faBriefcase} color='#4d4d4e' />
                 </NavLink>
                 <NavLink exact activeclassname='active' className='contact-link' to='/contact'>
