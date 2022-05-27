@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
-import { cryptoverse, traveladviser, zoo, realestate, openAi } from '../../assets/images/index'
+import { cryptoverse, traveladviser, zoo, realestate, openAi, ecommerce } from '../../assets/images/index'
 
 const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -29,6 +29,22 @@ const Portfolio = () => {
                     </h1>
                 </div>
                 <div className='portfolio__container'>
+                    <figure className="portfolio__item">
+                        <img src={ecommerce} alt="portfolio" />
+                        <figcaption>
+                            <h2>ECommerce App</h2>
+                            <p>To explore Ecommerce web app click the link below</p>
+                            <div className="portfolio__link">
+                                <a href="https://react-ecommerce-bice.vercel.app/" target='_blank'>
+                                    <FontAwesomeIcon icon={faLink} size="lg" color='#ffd700' />
+                                </a>
+                                <a href="https://github.com/qipchaq/react-ecommerce" target='_blank'>
+                                    <FontAwesomeIcon icon={faGithubSquare} size="lg" color='#ffd700' />
+                                </a>
+                            </div>
+                        </figcaption>
+                    </figure>
+
                     <figure className="portfolio__item">
                         <img src={realestate} alt="portfolio" />
                         <figcaption>
