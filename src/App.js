@@ -1,30 +1,25 @@
-import './App.scss';
-import { Route, Routes } from 'react-router-dom';
+import './App.scss'
+import { Route, Routes } from 'react-router-dom'
 
 import Layout from './components/Layout'
 import Home from './components/Home'
 import About from './components/About'
-import Contact from './components/Contact';
-import Portfolio from './components/Portfolio';
-
-import ReactGA from 'react-ga';
+import Contact from './components/Contact'
+import Portfolio from './components/Portfolio'
 
 function App() {
-  const TRACKING_ID = "UA-227033456-1";
-  ReactGA.initialize(TRACKING_ID);
-
   return (
     <>
       <Routes>
-        <Route exact path='/' element={<Layout />}>
+        <Route exact path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/portfolio' element={<Portfolio />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/portfolio" element={<Portfolio />} />
         </Route>
       </Routes>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
