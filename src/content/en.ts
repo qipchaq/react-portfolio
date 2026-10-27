@@ -25,6 +25,7 @@ const en: Content = {
     tagline:
       'I build complex enterprise web applications: scalable React and TypeScript front ends backed by Node.js services.',
     location: 'Almaty, Kazakhstan · UTC+5',
+    photoAlt: 'Portrait of Adil Nurkaliyev',
   },
   about: {
     heading: 'About',
