@@ -25,6 +25,7 @@ const ru: Content = {
     tagline:
       'Создаю сложные корпоративные веб-приложения: масштабируемые интерфейсы на React и TypeScript и сервисы на Node.js.',
     location: 'Алматы, Казахстан · UTC+5',
+    photoAlt: 'Портрет: Адиль Нуркалиев',
   },
   about: {
     heading: 'Обо мне',

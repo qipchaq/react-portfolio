@@ -52,6 +52,7 @@ export interface Content {
     role: string
     tagline: string
     location: string
+    photoAlt: string
   }
   about: {
     heading: string

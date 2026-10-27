@@ -1,5 +1,6 @@
 import { useLang } from '../i18n'
 import type { SectionId } from '../content'
+import Avatar from './Avatar'
 import Nav from './Nav'
 import Socials from './Socials'
 import Controls from './Controls'
@@ -11,6 +12,7 @@ const Header = ({ active }: { active: SectionId }) => {
   return (
     <header className="relative isolate lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[46%] lg:flex-col lg:justify-between lg:py-24">
       <div>
+        <Avatar />
         <p className="rise font-mono text-xs uppercase tracking-widest text-dim">
           {c.person.location}
         </p>
