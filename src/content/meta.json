@@ -1,0 +1,11 @@
+{
+  "siteUrl": "https://qipchaq.netlify.app",
+  "en": {
+    "title": "Adil Nurkaliyev — Senior Fullstack Engineer",
+    "description": "Senior fullstack engineer from Almaty with 5+ years of commercial experience in React, TypeScript and Node.js. Enterprise web apps, micro-frontends and a background in aerospace engineering."
+  },
+  "ru": {
+    "title": "Адиль Нуркалиев — Senior Fullstack-разработчик",
+    "description": "Senior fullstack-разработчик из Алматы: более 5 лет коммерческого опыта с React, TypeScript и Node.js. Корпоративные веб-приложения, микрофронтенды и инженерное прошлое в космической отрасли."
+  }
+}

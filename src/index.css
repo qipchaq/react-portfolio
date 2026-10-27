@@ -1,13 +1,172 @@
+@import 'tailwindcss';
+
+/* Deep-space ink with an amber accent (the old site's gold, toned down) */
+:root,
+:root[data-theme='dark'] {
+  --bg: #0a0c12;
+  --elev: #11151f;
+  --fg: #ece9e2;
+  --muted: #a3a8b8;
+  --dim: #7d8396;
+  --line: rgb(255 255 255 / 0.1);
+  --accent: #ffb84d;
+  --accent-fg: #ffc76b;
+  --accent-soft: rgb(255 184 77 / 0.12);
+  --on-accent: #0a0c12;
+  --glow-a: rgb(255 184 77 / 0.07);
+  --glow-b: rgb(99 102 241 / 0.1);
+  --stars: 0.55;
+  color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+  --bg: #f6f3ec;
+  --elev: #fffdf8;
+  --fg: #16171b;
+  --muted: #484b57;
+  --dim: #646875;
+  --line: rgb(0 0 0 / 0.12);
+  --accent: #b45309;
+  --accent-fg: #92400e;
+  --accent-soft: rgb(180 83 9 / 0.1);
+  --on-accent: #ffffff;
+  --glow-a: rgb(255 184 77 / 0.28);
+  --glow-b: rgb(99 102 241 / 0.07);
+  --stars: 0;
+  color-scheme: light;
+}
+
+@theme inline {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono:
+    'JetBrains Mono Variable', ui-monospace, 'SFMono-Regular', monospace;
+  --color-bg: var(--bg);
+  --color-elev: var(--elev);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-dim: var(--dim);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  --color-accent-soft: var(--accent-soft);
+  --color-on-accent: var(--on-accent);
+}
+
 html {
-  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  font: 300 11px/1.4 'Helvetica Neue', sans-serif;
-  color: #444;
-  background: #022c43;
-  display: block;
+  background: var(--bg);
+  color: var(--muted);
+  font-family: var(--font-sans);
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.25s ease;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background:
+    radial-gradient(60rem 36rem at 8% -8%, var(--glow-a), transparent 65%),
+    radial-gradient(50rem 32rem at 100% 110%, var(--glow-b), transparent 60%);
+}
+
+.stars {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: var(--stars);
+  background-image:
+    radial-gradient(1px 1px at 40px 60px, rgb(255 255 255 / 0.9), transparent),
+    radial-gradient(
+      1px 1px at 160px 120px,
+      rgb(255 255 255 / 0.6),
+      transparent
+    ),
+    radial-gradient(
+      1.5px 1.5px at 290px 40px,
+      rgb(255 255 255 / 0.8),
+      transparent
+    ),
+    radial-gradient(1px 1px at 90px 230px, rgb(255 255 255 / 0.5), transparent),
+    radial-gradient(
+      1px 1px at 230px 290px,
+      rgb(255 255 255 / 0.7),
+      transparent
+    ),
+    radial-gradient(
+      1.5px 1.5px at 340px 210px,
+      rgb(255 255 255 / 0.55),
+      transparent
+    ),
+    radial-gradient(1px 1px at 20px 340px, rgb(255 255 255 / 0.6), transparent),
+    radial-gradient(
+      1px 1px at 190px 360px,
+      rgb(255 255 255 / 0.45),
+      transparent
+    );
+  background-size: 380px 380px;
+  transition: opacity 0.25s ease;
+}
+
+/* Animated underline for links inside running text */
+.link {
+  background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px
+    no-repeat;
+  transition:
+    background-size 0.25s ease,
+    color 0.2s ease;
+}
+
+.link:hover,
+.link:focus-visible {
+  background-size: 100% 1px;
+}
+
+.orbit-spin {
+  animation: orbit 48s linear infinite;
+}
+
+@keyframes orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+.rise {
+  animation: rise 0.6s ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .orbit-spin,
+  .rise {
+    animation: none;
+  }
 }
