@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>%META_TITLE%</title>
+    <meta name="description" content="%META_DESCRIPTION%" />
+    <meta name="theme-color" content="#0a0c12" />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="canonical" href="%SITE_URL%/" />
+    <link rel="alternate" hreflang="en" href="%SITE_URL%/" />
+    <link rel="alternate" hreflang="ru" href="%SITE_URL%/ru/" />
+    <link rel="alternate" hreflang="x-default" href="%SITE_URL%/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Adil Nurkaliyev" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="%SITE_URL%/" />
+    <meta property="og:title" content="%META_TITLE%" />
+    <meta property="og:description" content="%META_DESCRIPTION%" />
+    <meta property="og:image" content="%SITE_URL%/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // Set the theme before first paint to avoid a flash of the wrong one
+      try {
+        var t = localStorage.getItem('theme')
+        if (t !== 'light' && t !== 'dark') {
+          t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
+        }
+        document.documentElement.dataset.theme = t
+      } catch (e) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      Please enable JavaScript to view this site. / Включите JavaScript, чтобы
+      открыть этот сайт.
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
